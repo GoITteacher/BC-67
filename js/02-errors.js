@@ -12,3 +12,5 @@ const username = "Mango";
 let age = 20;
 
 const price = 200;
+
+console.log(username);
