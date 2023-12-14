@@ -15,7 +15,7 @@
 // console.log(String(null)); // "null"
 // console.log(String(undefined)); // "undefined"
 
-// console.log(5 + "3"); // "53"
+// console.log(5 + '3'); // "53"
 // console.log("5" + true); // "5true"
 // console.log("5" + false); // "5false"
 // console.log("5" + null); // "5null"
