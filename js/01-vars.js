@@ -9,7 +9,7 @@
  * - Оператор typeof
  */
 // const x = 10; // number
-// const y = "Hello World"; //string
+// const y = 'Hello World'; //string
 // const q = false; // true or false // boolean
 // const t = null;
 // const r = undefined;
