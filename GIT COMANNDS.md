@@ -14,19 +14,19 @@
 1. `git branch "branchName"` - створює гілку під назвою "branchName"
 1. `git diff` - показує відрізки рядків між двома версіями файлу (між двома)
    комітами)
-1. `git checkout -b "branchName"` - творюємо гілку з назвою "branchName" і
+1. `git checkout -b "branchName"` - cтворюємо гілку з назвою "branchName" і
    переходимо на неї
-1. `git checkout "branchName"` - переходити на гілку під назвою "branchName"
+1. `git checkout "branchName"` - переходимо на гілку під назвою "branchName"
 1. `git clone...` – Клонує існуючий репозиторій GIT на локальну машину.
 1. `git commit -m "commit message"` - підписуємо збереження змін у файлах
 1. `git log` - показує історію комітів
 1. `git fetch` - отримуємо зміни з сайту github
 1. `git pull` - отримуємо останні зміни з сайту github
 1. `git push` - відправляємо зміни на сайт github
-1. `git push --set-upstream origin "branchName"` - пушити нову гілку на гітхаб
+1. `git push --set-upstream origin "branchName"` - пушимо нову гілку на гітхаб
 1. `git push origin -d BranchName` - видаляє гілку з сайту github
 1. `git push origin --delete BranchName` - видаляє гілку з сайту github
-1. `git remote -v` - перевірити до якого репозиторія прив'язань проект
+1. `git remote -v` - перевірити до якого репозиторія прив'язано проект
 1. `git remote set-url origin ........` - змінити адресу репозиторію
 1. `git stash` - зберігаємо не збережені зміни у файлах і кладемо їх у буфер
    обміну
