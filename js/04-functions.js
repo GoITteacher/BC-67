@@ -47,12 +47,39 @@ goToStore(); */
 
 // ===============================
 
-const email1 = " myEmail1@gmail.com    ";
-const email2 = " myEmail2@gmail.com    ";
-const email3 = " myEmail3@gmail.com    ";
-const email4 = " myEmail4@gmail.com    ";
+// const email1 = "myEmail1@gmail.co";
+// const email2 = "ryEmail2@gmail.coy";
+// const email3 = "tyEmail3@gmail.coa";
+// const email4 = "hyEmail4@gmail.cow";
 
-let result = email1.trim();
+// function getFirstAndLastSymbol(email) {
+//   return email[0] + email[email.length - 2];
+// }
+
+// let result1 = getFirstAndLastSymbol(email1);
+// let result2 = getFirstAndLastSymbol(email2);
+// let result3 = getFirstAndLastSymbol(email3);
+// let result4 = getFirstAndLastSymbol(email4);
+
+// console.log(result1);
+// console.log(result2);
+// console.log(result3);
+// console.log(result4);
+
+// ===========================================
+
+/* function foo(num) {
+  const x = 10;
+  return x + num;
+}
+
+const result1 = foo(10);
+const result2 = foo(5);
+
+console.log(result2);
+ */
+// ===========================================
+
 // console.log("Before fnA execution");
 // fnA();
 // console.log("After fnA execution");
@@ -77,5 +104,33 @@ let result = email1.trim();
  * Індекс маси тіла необхідно округлити до однієї цифри після коми.
  */
 
+// '88.3'
+// function calcBMI(weight, height) {
+//   weight = +weight.replace(",", ".");
+//   height = +height.replace(",", ".");
+//   return +(weight / height ** 2).toFixed(2);
+// }
+
 // const bmi = calcBMI("88,3", "1.75");
 // console.log(bmi); // 28.8
+
+// ==================================
+// const x = 10;
+// const y = 20;
+
+// function foo1() {
+//   const x = 5;
+//   const t = 15;
+//   console.log(x + y);
+// }
+
+// function foo2() {
+//   const y = 5;
+//   const t = 20;
+//   console.log(x + y);
+// }
+
+// foo1();
+// foo2();
+
+// console.log(t);
