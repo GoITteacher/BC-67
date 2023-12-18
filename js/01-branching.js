@@ -7,25 +7,88 @@
  * - Тернарний оператор
  */
 
-console.log("Before");
+// console.log("Before");
 
-console.log("After");
+// if (true) {
+//   console.log(1);
+//   console.log(2);
+//   console.log(3);
+// }
 
-/**
- * -----------------------------
- */
-const points = 5000;
+// console.log("After");
 
-/**
- * -----------------------------
- */
-const balance = 1000;
-let message;
+// ================
 
-if (balance >= 0) {
-  message = "Positive";
+// const age = 20;
+
+// if (age > 18) {
+//   console.log("Hello");
+// }
+
+// const password = "qwerty";
+// const userPassword = "qwerty";
+
+// if (password === userPassword) {
+//   console.log("Ok");
+// }
+
+// =================
+
+/* console.log("start");
+const age = 17;
+
+if (age >= 18) {
+  console.log("hello");
 } else {
-  message = "Negative";
+  console.log("Bye");
 }
 
-console.log(message);
+console.log("end"); */
+
+// ===================
+// console.log("start");
+
+// const balance = 50;
+
+// if (balance >= 500) {
+//   console.log("VIP");
+// } else if (balance >= 100) {
+//   console.log("Standart");
+// } else {
+//   console.log("Bye");
+// }
+
+// console.log("end");
+
+/**
+ * -----------------------------
+ */
+// const points = 1244;
+
+// if (points > 4000) {
+//   console.log(5);
+// } else if (points > 3000) {
+//   console.log(4);
+// } else if (points > 2000) {
+//   console.log(3);
+// } else if (points > 1000) {
+//   console.log(2);
+// } else {
+//   console.log(1);
+// }
+
+/**
+ * -----------------------------
+ */
+// const balance = 120;
+// let message = balance >= 0 ? "positive" : "negative";
+
+// if (balance >= 0) {
+//   message = "positive";
+// } else {
+//   message = "negative";
+// }
+
+// console.log(message);
+
+// const x = (balance >= 0) ? 'Hello' : "Bye";
