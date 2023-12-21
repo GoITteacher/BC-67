@@ -8,10 +8,14 @@
  * індексом 0 буде виведено 1 - Mango, а для індексу 2 виведе 3 - Ajax.
  */
 
-function logItems(items) {}
+// function logItems(items) {
+//   for (let i = 0; i < items.length; i++) {
+//     console.log(`${i + 1} - ${items[i]}`);
+//   }
+// }
 
-logItems(["Mango", "Poly", "Ajax"]);
-logItems(["🍎", "🍇", "🍑", "🍌", "🍋"]);
+// logItems(["Mango", "Poly", "Ajax"]);
+// logItems(["🍎", "🍇", "🍑", "🍌", "🍋"]);
 
 /**
  * Напиши функцію printInfo(names, phones) яка виводить
@@ -22,12 +26,16 @@ logItems(["🍎", "🍇", "🍑", "🍌", "🍋"]);
  * гарантовано однакова.
  */
 
-function printInfo(names, phones) {}
+/* function printInfo(names, phones) {
+  names = names.split(",");
+  phones = phones.split(" ");
 
-printInfo(
-  "Jacob,William,Solomon,Artemis",
-  "89001234567,89001112233,890055566377,890055566300"
-);
+  for (let i = 0; i < names.length; i++) {
+    console.log(names[i], phones[i]);
+  }
+}
+
+printInfo("Jacob,William", "89001234567 093545345"); */
 
 /**
  * Напиши функцію formatTime(minutes) яка переведе значення
@@ -35,17 +43,35 @@ printInfo(
  * та хвилин HH:MM.
  */
 
-const hours = Math.floor(totalMinutes / 60);
-const minutes = totalMinutes % 60;
-console.log(hours);
-console.log(minutes);
+/* function formatTime(totalMinutes) {
+  let hours = Math.floor(totalMinutes / 60) + "";
+  let minutes = (totalMinutes % 60) + "";
 
-const doubleDigitHours = String(hours).padStart(2, 0);
-const doubleDigitMinutes = String(minutes).padStart(2, 0);
-console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
+  hours = hours.padStart(2, "0");
+  minutes = minutes.padStart(2, "0");
 
-function formatTime(minutes) {}
+  return `${hours}:${minutes}`;
+}
 
 console.log(formatTime(70)); // "01:10"
 console.log(formatTime(450)); // "07:30"
-console.log(formatTime(1441)); // "24:01"
+console.log(formatTime(1441)); // "24:01" */
+
+// ==============================
+
+// function sortArray(arr) {
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[i] < arr[j]) {
+//         const temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//       }
+//     }
+//   }
+// }
+
+// const array = [4, 6, 3, 1, 3, 6];
+
+// sortArray(array);
+// console.log(array);
