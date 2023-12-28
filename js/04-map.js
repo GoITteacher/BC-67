@@ -5,6 +5,14 @@
  * - Повертає новий масив такої ж довжини
  */
 
+/* const arr = ["Vlad", "Mariya", "Alina", "Roman", "Anton", "Yaroslav"];
+
+const result2 = arr.map((elem, idx) => {
+  return `<li>${elem}</li>`;
+});
+
+console.log(result2.join("\n")); */
+
 const allCars = [
   { make: "Honda", model: "CR-V", amount: 14, price: 24045 },
   { make: "Honda", model: "Accord", amount: 2, price: 22455 },
@@ -22,19 +30,34 @@ const allCars = [
  * Нехай функція getModels повертає масив моделей (поле model) всіх автомобілів.
  */
 
-const getModels = (cars) => {};
+/* const getModels = (cars) => {
+  const arr = cars.map((car, idx) => {
+    return car.price;
+  });
+  return arr;
+};
 
-console.table(getModels(allCars));
+console.table(getModels(allCars)); */
 
 /**
  * Нехай функція makeCarsWithDiscount повертає новий масив об'єктів із змінним
  * значенням властивості price залежно від переданої знижки.
  */
 
-const makeCarsWithDiscount = (cars, discount) => {};
+// const makeCarsWithDiscount = (cars, discount) => {
+//   const arr = cars.map((item) => {
+//     const car = { ...item };
+//     car.price *= 1 - discount;
+//     return car.price;
+//   });
 
-console.table(makeCarsWithDiscount(allCars, 0.2));
-console.table(makeCarsWithDiscount(allCars, 0.4));
+//   return arr;
+// };
+
+// console.table(makeCarsWithDiscount(allCars, 0.2));
+// console.table(allCars);
+
+// console.table(makeCarsWithDiscount(allCars, 0.4));
 
 const players = [
   { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
@@ -43,14 +66,33 @@ const players = [
   { id: "player-4", name: "Ajax", timePlayed: 150, points: 71, online: false },
   { id: "player-5", name: "Chelsy", timePlayed: 80, points: 48, online: true },
 ];
-console.table(players);
+// console.table(players);
 
 /*
  * Збільшуємо кількість годин гравця за id
  */
 
-const playerIdToUpdate = "player-3";
+/* const playerIdToUpdate = "player-3";
 
-const updatedPlayers = players.map((player) => {});
+const updatedPlayers = players.map((player) => {
+  player = { ...player };
+  if (player.id === playerIdToUpdate) {
+    player.timePlayed += 5;
+  }
+  return player;
+});
 
-console.log(updatedPlayers);
+console.table(updatedPlayers); */
+
+/* function template() {
+  const result = players.map((player) => {
+    return `<div>
+    <p>${player.name}</p>
+    <p>${player.points}</p>
+</div>`;
+  });
+
+  console.log(result.join("\n\n\n"));
+}
+
+template(); */

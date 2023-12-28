@@ -5,48 +5,84 @@
  * - Замінює класичний for, якщо не потрібно переривати цикл
  */
 
+/* 
+
+numbers.forEach((item, idx) => {
+  console.log(item * idx);
+});
+
+numbers.forEach((item, idx) => {
+  console.log(`${idx + 1}) ${item}`);
+});
+
+const myCallback = console.log;
+
+numbers.forEach(); */
+/* 
+console.log(5, 0, arr)
+console.log(10,1, arr)
+console.log(15,2, arr)
+console.log(20,3, arr)
+console.log(25,4, arr)
+*/
+/* 
 const numbers = [5, 10, 15, 20, 25];
+
 let total = 0;
 
-console.log(total);
+numbers.forEach((el) => {
+  total += el;
+});
+
+console.log(total); */
+
+/* const arr = ["Hello", "World", "Test", "Amigo", "Word"];
+
+const result = arr.forEach((el) => {
+  console.log(`Save to Database ${el}`);
+}); */
+
+// console.log(result);
 
 /**
  * Виконайте рефакторинг коду за допомогою методу forEach та стрілочні функції.
  */
-function logItems(items) {
-  console.log(items);
-  for (let i = 0; i < items.length; i += 1) {
-    console.log(`${i + 1} - ${items[i]}`);
-  }
+/* function logItems(items) {
+  items.forEach((item, idx) => {
+    console.log(`${idx + 1} - ${item}`);
+  });
 }
 
 logItems(["Mango", "Poly", "Ajax"]);
-logItems(["🍎", "🍇", "🍑", "🍌", "🍋"]);
+logItems(["🍎", "🍇", "🍑", "🍌", "🍋"]); */
 
 /**
  * Виконайте рефакторинг коду за допомогою методу forEach та стрілочні функції.
  */
-function printContactsInfo({ names, phones }) {
+/* function printContactsInfo({ names, phones }) {
   const nameList = names.split(",");
   const phoneList = phones.split(",");
-  for (let i = 0; i < nameList.length; i += 1) {
-    console.log(`${nameList[i]}: ${phoneList[i]}`);
-  }
+
+  nameList.forEach((elem, idx) => {
+    console.log(`${elem}: ${phoneList[idx]}`);
+  });
 }
 
 printContactsInfo({
   names: "Jacob,William,Solomon,Artemis",
   phones: "89001234567,89001112233,890055566377,890055566300",
-});
+}); */
 
 /**
  * Виконайте рефакторинг коду за допомогою методу forEach та стрілочні функції.
  */
 function calculateAverage(...args) {
   let total = 0;
-  for (let i = 0; i < args.length; i++) {
-    total += args[i];
-  }
+
+  args.forEach((elem) => {
+    total += elem;
+  });
+
   return total / args.length;
 }
 
