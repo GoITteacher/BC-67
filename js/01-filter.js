@@ -8,10 +8,12 @@
  *    - якщо коллбек повернув false елемент НЕ додається в масив, що повертається
  */
 
-const numbers = [5, 10, 15, 20, 25];
-
-const filteredNumbers = numbers;
-console.log(filteredNumbers);
+/* 
+const numbers = [2, 5, 4, 1, 1, 3, 5, 7, 7, 33, 23, 56];
+const filteredNumbers = numbers.filter(() => {
+  return el > idx && el % 3 === 0;
+});
+console.log(filteredNumbers); */
 
 /**
  * ---------------------------
@@ -104,26 +106,40 @@ const allCars = [
  * значення параметра threshold.
  */
 
-const filterByPrice = (cars, threshold) => {};
+/* const filterByPrice = (cars, threshold) => {
+  return cars.filter((car) => {
+    return car.price < threshold;
+  });
+};
 
-// console.table(filterByPrice(allCars, 30000));
-// console.table(filterByPrice(allCars, 25000));
+console.table(filterByPrice(allCars, 30000));
+console.table(filterByPrice(allCars, 23000)); */
 
 /**
  * Нехай функція getCarsWithDiscount повертає масив автомобілів
  * властивість onSale яких true.
  */
 
-const getCarsWithDiscount = (cars) => {};
+/* const getCarsWithDiscount = (cars) => {
+  return cars.filter((car) => car.onSale);
+};
 
-// console.table(getCarsWithDiscount(allCars));
+const getCarsWithoutDiscount = (cars) => {
+  return cars.filter((car) => !car.onSale);
+};
+
+console.table(getCarsWithDiscount(allCars));
+console.table(getCarsWithoutDiscount(allCars)); */
 
 /**
  * Нехай функція getCarsWithType повертає масив автомобілів тип яких збігається
  * зі значенням параметра type.
  */
 
-const getCarsWithType = (cars, type) => {};
+/* const getCarsWithType = (cars, type) => {
+  return cars.filter((car) => car.type === type);
+};
 
-// console.table(getCarsWithType(allCars, "suv"));
-// console.table(getCarsWithType(allCars, "sedan"));
+console.table(getCarsWithType(allCars, "suv"));
+console.table(getCarsWithType(allCars, "sedan"));
+console.log(getCarsWithType(allCars, "")); */

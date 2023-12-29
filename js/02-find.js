@@ -5,15 +5,18 @@
  * - Повертає перший елемент, що задовольняє умові або undefined
  */
 
-const numbers = [5, 10, 15, 20, 25];
+/* const numbers = [5, 10, 15, 20, 25];
 
-const number = numbers;
-// console.log(number);
+const number = numbers.find((el, idx, arr) => {
+  return el % 2 === 0;
+});
+
+console.log(number); */
 
 /**
  * -----------------------------
  */
-const cars = [
+const allCars = [
   { make: "Honda", model: "CR-V", type: "suv", price: 24045 },
   { make: "Honda", model: "Accord", type: "sedan", price: 22455 },
   { make: "Mazda", model: "Mazda 6", type: "sedan", price: 24195 },
@@ -29,17 +32,32 @@ const cars = [
 /**
  * Шукаємо машину за моделлю
  */
-const getCarByModel = (cars, model) => {};
+/* const getCarByModel = (cars, model) => {
+  return cars.find((car) => {
+    return car.model === model;
+  });
+};
 
-// console.log(getCarByModel(allCars, "F-150"));
-// console.log(getCarByModel(allCars, "CX-9"));
-// console.log(getCarByModel(allCars, "Cayenne"));
+const getCarPriceByModel = (cars, model) => {
+  const obj = cars.find((car) => {
+    return car.model === model;
+  });
+
+  return obj?.price;
+}; */
+
+// console.log(getCarPriceByModel(allCars, "F-150"));
+// console.log(getCarPriceByModel(allCars, "CX-9"));
+// console.log(getCarPriceByModel(allCars, "Cayenne"));
 
 /**
  * Шукаємо машину за типом кузова
  */
-const getCarByType = (cars, type) => {};
+/* const getCarByType = (cars, type) => {
+  return cars.find((car) => car.type === type);
+};
 
-// console.log(getCarByType(allCars, "sedan"));
-// console.log(getCarByType(allCars, "truck"));
-// console.log(getCarByType(allCars, "tank"));
+console.log(getCarByType(allCars, "sedan"));
+console.log(getCarByType(allCars, "truck"));
+console.log(getCarByType(allCars, "tank"));
+ */
