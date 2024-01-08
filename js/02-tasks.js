@@ -2,7 +2,7 @@ function foo() {
   console.log("foo -> this", this);
 }
 
-foo(); // Який this ???
+// foo(); // w || u
 
 /**
  * -------------------------
@@ -17,13 +17,13 @@ const book = {
   },
 };
 
-book.showThis(); // Який this ???
+/* book.showThis(); // book
 
 const outerShowThis = book.showThis;
-outerShowThis(); // Який this ???
+outerShowThis(); //w || u
 
 const outerShowTitle = book.showTitle;
-outerShowTitle(); // Який this ???
+outerShowTitle(); // w || u */
 
 /**
  * Напишіть метод calcTotalPrice(stoneName), який приймає назву каменю і
@@ -37,10 +37,49 @@ const chopShop = {
     { name: "Sapphire", price: 1400, quantity: 7 },
     { name: "Ruby", price: 800, quantity: 2 },
   ],
-  calcTotalPrice(stoneName) {},
+  calcTotalPrice(stoneName) {
+    const stone = this.stones.find((el) => el.name === stoneName);
+
+    return stone.price * stone.quantity;
+  },
 };
 
-console.log(chopShop.calcTotalPrice("Emerald")); // 5200
-console.log(chopShop.calcTotalPrice("Diamond")); // 8100
-console.log(chopShop.calcTotalPrice("Sapphire")); // 9800
-console.log(chopShop.calcTotalPrice("Ruby")); // 1600
+// console.log(chopShop.calcTotalPrice("Emerald")); // 5200
+// console.log(chopShop.calcTotalPrice("Diamond")); // 8100
+// console.log(chopShop.calcTotalPrice("Sapphire")); // 9800
+// console.log(chopShop.calcTotalPrice("Ruby")); // 1600
+
+/* const obj = {
+  name: "Max",
+  age: 10,
+  city: "Kyiv",
+
+  setAge(newValue) {
+    this.age = newValue;
+  },
+};
+
+obj.setAge(25);
+
+console.log(obj); */
+
+// ==============================
+
+/* function createProp(name, value) {
+  this[name] = value;
+}
+
+const obj = {
+  name: "Max",
+  createProp,
+};
+const obj1 = {
+  name: "Max",
+  createProp,
+};
+
+obj.createProp("age", 10);
+obj1.createProp("hello", "world");
+
+console.log(obj);
+console.log(obj1); */
