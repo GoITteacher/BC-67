@@ -15,3 +15,26 @@ const colorPickerContainerEl = document.querySelector('.js-color-picker');
 /*
  * Пишемо функцію для створення розмітки колорпікера
  */
+
+function colorsTemplate() {
+  const markup = options
+    .map(el => {
+      return `<div class="color-picker__option">
+  <div class="box" style="background-color: ${el.color}"></div>
+  <p>${el.label}</p>
+</div>`;
+    })
+    .join('\n\n');
+
+  return markup;
+}
+
+// const markupHTML = colorsTemplate();
+// colorPickerContainerEl.innerHTML = markupHTML; // очистити або замінити
+
+colorPickerContainerEl.insertAdjacentHTML('afterbegin', markupHTML);
+
+// for (let color of options) {
+//   const markup = `<li>${color.color}</li>`;
+//   colorPickerContainerEl.insertAdjacentHTML('afterbegin', markup);
+// }
