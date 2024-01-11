@@ -64,10 +64,8 @@ function onFormSubmit(e) {
   const userValue = elements.form.elements.query.value;
   const userSelect = elements.form.elements.options.value;
 
-  console.log(userSelect);
-
   const filteredCars = cars.filter(obj => {
-    return obj[userSelect].includes(userValue);
+    return obj['car'].includes(userValue);
   });
 
   carsTemplate(filteredCars);
