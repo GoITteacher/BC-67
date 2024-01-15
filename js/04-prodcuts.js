@@ -44,38 +44,50 @@ const products = [
 ];
 
 const container = document.querySelector('.products');
-const backdrop = document.querySelector('.js-backdrop');
-const modal = document.querySelector('.js-modal');
+container.addEventListener('click', onProductClick);
 
-container.addEventListener('click', e => {
+function onProductClick(e) {
   if (e.target === e.currentTarget) return;
 
   const liElem = e.target.closest('li');
   const id = liElem.dataset.id;
   const product = products.find(el => el.id === id);
 
-  const modalMarkup = modalTemplate(product);
-  modal.innerHTML = modalMarkup;
+  const modalInstance = basicLightbox.create(
+    `
+<div class="modal">
+    <img
+      src="${product.img}"
+      alt="${product.name}"
+    />
+    <h2>${product.name}</h2>
+    <p>Price: ${product.price}</p>
+    <p>${product.description}</p>
+</div>
+  `,
+    {
+      onShow: instance => {
+        console.log('ADD LISTENER');
+        document.addEventListener('keydown', onModalClose);
+      },
+      onClose: instance => {
+        console.log('Remove LISTENER');
+        document.removeEventListener('keydown', onModalClose);
+      },
+    },
+  );
 
-  showModal();
-});
+  modalInstance.show();
 
-backdrop.addEventListener('click', e => {
-  if (e.target.classList.contains('backdrop')) {
-    hideModal();
+  function onModalClose(e) {
+    console.log(e.code);
+    if (e.code === 'Escape') {
+      modalInstance.close();
+    }
   }
-});
-
-// ================================================
-function showModal() {
-  document.body.classList.add('show-modal');
 }
 
-function hideModal() {
-  document.body.classList.remove('show-modal');
-}
-
-// =================== INIT ========================
+// =============================
 function productsTemplate() {
   return products
     .map(product => {
@@ -90,16 +102,6 @@ function productsTemplate() {
     })
     .join('\n');
 }
-
-function modalTemplate(obj) {
-  return ` <img
-  src="${obj.img}"
-  alt=""
-/>
-<h3>${obj.name}</h3>
-<p>Price: ${obj.price}</p>
-<p>${obj.description}</p>`;
-}
-
 const markup = productsTemplate();
 container.innerHTML = markup;
+// =============================

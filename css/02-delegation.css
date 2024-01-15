@@ -19,6 +19,15 @@
 .black {
   background-color: black;
 }
+.silver {
+  background-color: silver;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: blue;
+}
 
 .box-red {
   width: 300px;

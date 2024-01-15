@@ -1,0 +1,26 @@
+body.show-modal .backdrop {
+  display: flex;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.449);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .modal {
+  min-width: 500px;
+  min-height: 500px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+} */
