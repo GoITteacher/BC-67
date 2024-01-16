@@ -19,3 +19,5 @@ const houseInfo = {
 
 const perimeter = calculateHousePerimeter(houseInfo);
 console.log(`Периметр будинку: ${perimeter}`);
+
+// ======================
