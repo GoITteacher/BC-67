@@ -1,20 +1,56 @@
-const STORAGE_KEY = "feedback-msg";
+const STORAGE_KEY = 'user-data';
 
-const form = document.querySelector(".feedback-form");
-const textarea = form.querySelector("textarea");
+const form = document.querySelector('.feedback-form');
 
-/*
- * - Скасовуємо стандартну поведінку
- * - Видаляємо повідомлення зі сховища
- * - Очищуємо форму
- */
+// ==========================
+form.addEventListener('input', onFormInput);
+function onFormInput(event) {
+  const name = form.elements.name.value;
+  const message = form.elements.message.value;
+  const data = { name, message };
 
-/*
- * - Отримуємо значення поля
- * - Зберігаємо його у сховище
- */
+  saveToLS(STORAGE_KEY, data);
+}
+// =========================
 
-/*
- * - Отримуємо значення зі сховища
- * - Якщо там щось було, оновлюємо DOM
- */
+form.addEventListener('submit', onFormSubmit);
+
+function onFormSubmit(e) {
+  e.preventDefault();
+
+  const name = form.elements.name.value;
+  const message = form.elements.message.value;
+
+  const data = { name, message };
+
+  console.log(data);
+
+  localStorage.removeItem(STORAGE_KEY);
+  form.reset();
+}
+
+// =========================
+function saveToLS(key, value) {
+  const zip = JSON.stringify(value);
+  localStorage.setItem(key, zip);
+}
+
+function loadFromLS(key) {
+  const zip = localStorage.getItem(key);
+  try {
+    const data = JSON.parse(zip);
+    return data;
+  } catch {
+    return zip;
+  }
+}
+
+// =========================
+
+function restoreData() {
+  const data = loadFromLS(STORAGE_KEY) || {};
+  form.elements.name.value = data.name || '';
+  form.elements.message.value = data.message || '';
+}
+
+restoreData();
