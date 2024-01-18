@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "push": "git add .; git commit -m 'update'; git push;",
-    "build": "vite build --base=/test1/",
+    "build": "vite build --base=/BC-67/",
     "preview": "vite preview",
     "start": "vite"
   },
