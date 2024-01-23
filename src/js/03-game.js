@@ -52,9 +52,11 @@ function onStartBtnClick() {
     const smile1 = arr.every(el => {
       return el === '🤑';
     });
+
     const smile2 = arr.every(el => {
       return el === '👿';
     });
+
     const win = smile1 || smile2;
 
     if (win) {
