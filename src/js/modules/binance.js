@@ -3,47 +3,43 @@ const refs = {
   infoEl: document.querySelector('.js-binance-info'),
 };
 
-refs.formEl.addEventListener('submit', e => {
+refs.formEl.addEventListener('submit', onFormSubmit);
+
+function onFormSubmit(e) {
   e.preventDefault();
 
-  const value = e.target.elements.query.value.trim();
+  const symbol = e.target.elements.query.value;
 
-  getPrice(value)
-    .then(data => {
-      renderPrice(data);
-    })
-    .catch(err => {
-      console.log('Don`t worry', err.message);
-    });
-});
-
-function getPrice(userValue) {
-  const BASE_URL = 'https://binance43.p.rapidapi.com/ticker/price';
-  const PARAMS = new URLSearchParams({
-    symbol: userValue,
+  getPrice(symbol).then(data => {
+    const markup = symbolTemplate(data);
+    refs.infoEl.innerHTML = markup;
   });
-  const url = `${BASE_URL}?${PARAMS}`;
+}
+
+function getPrice(symbol) {
+  const BASE_URL = 'https://binance43.p.rapidapi.com';
+  const END_POINT = '/ticker/price';
+  const PARAMS = new URLSearchParams({ symbol });
+  const url = `${BASE_URL}${END_POINT}?${PARAMS}`;
 
   const options = {
     headers: {
-      'X-RapidAPI-Key': '9b3ff61931msh1b42d77d34e33dap1c29cajsn3d3169e0e2f4',
+      'X-RapidAPI-Key': 'f6fe44fec7msh9f58de139869781p15408ajsn8e7b73b5d6b1',
       'X-RapidAPI-Host': 'binance43.p.rapidapi.com',
     },
   };
 
-  return fetch(url, options).then(res => {
-    if (!res.ok) {
-      throw new Error('Error');
+  return fetch(url, options).then(response => {
+    if (response.ok) {
+      return response.json();
     } else {
-      return res.json();
+      return { symbol: 'Null', price: '0' };
     }
   });
 }
 
-function renderPrice({ symbol, price }) {
-  const markup = `
-    <span>${symbol}</span>
-    <span>${Number.parseInt(price)}</span>`;
-
-  refs.infoEl.innerHTML = markup;
+function symbolTemplate({ price, symbol }) {
+  price = (+price).toFixed(2);
+  return `<span>${symbol}</span>
+  <span>${price}</span>`;
 }

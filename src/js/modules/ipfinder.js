@@ -3,26 +3,38 @@ const refs = {
   cardInfo: document.querySelector('.js-ip-form'),
 };
 
-refs.formEl.addEventListener('submit', event => {
-  event.preventDefault();
-  const IP = refs.formEl.elements.query.value;
-  getIp(IP).then(data => {
+refs.formEl.addEventListener('submit', onFormSubmit);
+
+function onFormSubmit(e) {
+  e.preventDefault();
+
+  const ip = e.target.elements.userip.value;
+
+  getInfoByIP(ip).then(data => {
     renderIp(data);
   });
-});
+}
 
-function getIp(ip) {
-  const baseUrl = 'https://ip-geolocation-ipwhois-io.p.rapidapi.com/json/';
+function getInfoByIP(ip) {
+  const BASE_URL = 'https://ip-geolocation-ipwhois-io.p.rapidapi.com';
+  const END_POINT = '/json/';
   const PARAMS = new URLSearchParams({ ip });
-  const url = `${baseUrl}?${PARAMS}`;
+  const url = `${BASE_URL}${END_POINT}?${PARAMS}`;
+
   const options = {
     headers: {
-      'X-RapidAPI-Key': '9b3ff61931msh1b42d77d34e33dap1c29cajsn3d3169e0e2f4',
+      'X-RapidAPI-Key': 'f6fe44fec7msh9f58de139869781p15408ajsn8e7b73b5d6b1',
       'X-RapidAPI-Host': 'ip-geolocation-ipwhois-io.p.rapidapi.com',
     },
   };
 
-  return fetch(url, options).then(response => response.json());
+  return fetch(url, options).then(response => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      console.log('ERROR');
+    }
+  });
 }
 
 function renderIp({
