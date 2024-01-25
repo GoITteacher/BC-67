@@ -1,100 +1,58 @@
 {
   "books": [
     {
-      "author": "Dolores DuBuque",
-      "title": "illum ut eos",
-      "desc": "Deserunt asperiores delectus alias. Ullam et tempora. Facere et labore asperiores. Necessitatibus a rerum in sit ipsum nisi. Aut consequatur voluptates et non ea optio qui aliquid. Expedita quas ut explicabo nisi.",
-      "id": 7
+      "id": "6d63",
+      "title": "eos quis nisi",
+      "author": "Tabitha Armstrong",
+      "desc": "Quis rerum ut fuga voluptas eligendi ut enim modi. Enim tempora laboriosam quis aut non. Repellendus voluptatem rerum quis est rerum est voluptatem aliquam nisi. Ex ad enim velit. Voluptatum nemo et impedit sapiente qui iure. Et molestias illum nostrum excepturi placeat dolore deserunt voluptatem."
     },
     {
-      "author": "Jamie Skiles II",
-      "title": "tempora laborum ratione",
-      "desc": "Vero qui dolor dignissimos quam quos expedita consequatur deleniti. Quisquam est molestias. Est quas quas et exercitationem et vel provident et.",
-      "id": 10
+      "id": "4d55",
+      "title": "distinctio quia ut",
+      "author": "Krystal Davis",
+      "desc": "Id qui deleniti voluptates atque sapiente nobis blanditiis. Eligendi laboriosam fuga nihil iusto hic est repellendus quaerat. Quia ut ipsa corrupti ipsum debitis ut. Veniam rem sit non laboriosam praesentium nulla. Aspernatur soluta atque consequatur voluptatem rerum. Et ratione at id."
     },
     {
-      "author": "Dr. Shawn Connelly",
-      "title": "est et facere",
-      "desc": "non",
-      "id": 11
+      "id": "572e",
+      "title": "dolor ipsam enim",
+      "author": "Brenda Kuphal",
+      "desc": "Cupiditate blanditiis voluptas atque iure deleniti. Alias cupiditate ex aut quia quasi quia error repellendus. Est quasi quas est non et sit amet. Voluptatum quisquam vel quae laboriosam veniam quas."
     },
     {
-      "author": "Bobby Stamm",
-      "title": "aut doloribus distinctio",
-      "desc": "Aut consequatur ut porro.",
-      "id": 12
+      "id": "f7d7",
+      "title": "neque minus et",
+      "author": "Gail Reilly",
+      "desc": "Veniam id eius consequatur officiis placeat et tempora in saepe. Consequatur unde excepturi deserunt molestiae consectetur non illo nesciunt. Sunt et et harum et et dolor accusamus."
     },
     {
-      "author": "Leigh Considine IV",
-      "title": "placeat aut sapiente",
-      "desc": "eos provident consequuntur",
-      "id": 13
+      "id": "4660",
+      "title": "inventore sed minus",
+      "author": "My Author",
+      "desc": "Quis magnam id est rerum enim excepturi reiciendis enim. Facilis ad totam fugit dolores ex magnam totam error. Dolorem nostrum libero doloribus commodi id omnis. Vel blanditiis quaerat qui velit et et dolor."
     },
     {
-      "author": "John Hintz",
-      "title": "omnis aut asperiores",
-      "desc": "Molestias ducimus doloribus. Quibusdam earum similique ut. Labore optio harum id maiores exercitationem quidem nobis fugiat corporis. Qui sequi fuga adipisci pariatur blanditiis fuga similique id cumque.",
-      "id": 14
+      "id": "ecdb",
+      "title": "minima ea soluta",
+      "author": "Naomi Shields",
+      "desc": "Illo qui itaque nihil sunt cum. Excepturi consequatur laborum numquam. Rerum iusto rerum est non provident qui sed aut. Ipsum rerum et sapiente sapiente repellat dolore vitae dolor. Commodi ut dolorem."
     },
     {
-      "author": "Miss Jacob Oberbrunner",
-      "title": "blanditiis quaerat magni",
-      "desc": "quisquam aut quas",
-      "id": 15
+      "id": "9ac3",
+      "title": "in dolor omnis",
+      "author": "Norma Rippin",
+      "desc": "Officia assumenda deleniti qui voluptatem blanditiis doloremque aut aliquam quis. Aliquam atque autem odio vel eius nostrum explicabo. Distinctio minus ea voluptatem fugit vel dolore veritatis. Fugit aut ipsa ab voluptate."
     },
     {
-      "author": "Robin O'Keefe",
-      "title": "dolore harum non",
-      "desc": "ex occaecati voluptate",
-      "id": 16
+      "id": "95a0",
+      "title": "eum et delectus",
+      "author": "Miss Ira Konopelski",
+      "desc": "Nulla dolore quae hic voluptates in. Culpa eum voluptas distinctio aspernatur aut et. Vitae sapiente dicta ut. Maxime ut et laudantium. Iusto excepturi vitae temporibus voluptatum quidem enim eaque rerum ipsum. Praesentium rerum qui ipsum voluptate in natus."
     },
     {
-      "author": "Neal Hudson MD",
-      "title": "tempore ratione aut",
-      "desc": "cum",
-      "id": 17
-    },
-    {
-      "author": "Malcolm Gorczany",
-      "title": "consequuntur delectus voluptas",
-      "desc": "Voluptas et eius molestiae consequatur in perferendis aut magni amet.",
-      "id": 18
-    },
-    {
-      "author": "Lance Cormier",
-      "title": "animi sed ut",
-      "desc": "sit nihil rerum",
-      "id": 19
-    },
-    {
-      "author": "Laurence Kulas",
-      "title": "dignissimos minus vero",
-      "desc": "Ut id vitae quis nobis. Autem deleniti expedita dolorem et quis. Quia voluptatem fugit sunt veniam vero aspernatur sed eaque. Enim qui asperiores omnis optio ullam.",
-      "id": 20
-    },
-    {
-      "author": "Suzanne Veum",
-      "title": "excepturi dolores commodi",
-      "desc": "Dolorum quae alias. Perspiciatis quibusdam non aut sed dolorum. Natus ut esse ipsam autem maxime ut.",
-      "id": 21
-    },
-    {
-      "author": "Shawn Zulauf",
-      "title": "at error explicabo",
-      "desc": "Similique eaque omnis cupiditate. Fuga cum fugit quos amet.",
-      "id": 22
-    },
-    {
-      "author": "Ms. Vivian Schultz",
-      "title": "vel est distinctio",
-      "desc": "est",
-      "id": 23
-    },
-    {
-      "author": "Mrs. Brittany Stanton",
-      "title": "ut et sunt",
-      "desc": "Expedita sit eveniet qui aspernatur rem.",
-      "id": 24
+      "id": "6e82",
+      "title": "itaque nulla nam",
+      "author": "Ebony Johns",
+      "desc": "Et veritatis veniam non corrupti reprehenderit consequatur vitae et et. Ratione repellat est dolor possimus in aut. Omnis odit voluptas. Non beatae odio est veniam accusantium. Quisquam sit quaerat recusandae vel odio maiores aperiam voluptas expedita. Adipisci similique illo voluptate."
     }
   ],
   "users": [
@@ -103,84 +61,93 @@
       "phone": "366-695-8386",
       "email": "Renee_Grimes79@yahoo.com",
       "avatar": "https://cdn.fakercloud.com/avatars/chaabane_wail_128.jpg",
-      "id": 1
+      "id": "1"
     },
     {
       "name": "James Ondricka",
       "phone": "300-357-6958",
       "email": "Sadie83@yahoo.com",
       "avatar": "https://cdn.fakercloud.com/avatars/eddiechen_128.jpg",
-      "id": 2
+      "id": "2"
     },
     {
       "name": "Harold Mante",
       "phone": "515-934-4190",
       "email": "Luella.Heller29@yahoo.com",
       "avatar": "https://cdn.fakercloud.com/avatars/namankreative_128.jpg",
-      "id": 3
+      "id": "3"
     },
     {
       "name": "Mr. Angelina Lynch",
       "phone": "457-238-5739",
       "email": "Sarah_Collier43@yahoo.com",
       "avatar": "https://cdn.fakercloud.com/avatars/lu4sh1i_128.jpg",
-      "id": 4
+      "id": "4"
     },
     {
       "name": "Ms. Danielle Schaefer",
       "phone": "676-406-4378",
       "email": "Charity.Conn16@yahoo.com",
       "avatar": "https://cdn.fakercloud.com/avatars/netonet_il_128.jpg",
-      "id": 5
+      "id": "5"
     },
     {
       "name": "Cheryl Kunze",
       "phone": "430-676-9640",
       "email": "Kennith_Rohan@hotmail.com",
       "avatar": "https://cdn.fakercloud.com/avatars/chatyrko_128.jpg",
-      "id": 6
+      "id": "6"
     },
     {
       "name": "Harvey Lehner",
       "phone": "804-794-4790",
       "email": "Ezequiel_Fritsch@gmail.com",
       "avatar": "https://cdn.fakercloud.com/avatars/michaelbrooksjr_128.jpg",
-      "id": 7
+      "id": "7"
     },
     {
       "name": "Shawna Balistreri MD",
       "phone": "408-201-0870",
       "email": "Hilton.Green@gmail.com",
       "avatar": "https://cdn.fakercloud.com/avatars/vitor376_128.jpg",
-      "id": 8
+      "id": "8"
     },
     {
       "name": "Rita Gibson",
       "phone": "686-982-0614",
       "email": "Magnus.Nikolaus@gmail.com",
       "avatar": "https://cdn.fakercloud.com/avatars/jamiebrittain_128.jpg",
-      "id": 9
+      "id": "9"
     },
     {
       "name": "Volodka",
       "phone": "456-335-4567",
       "email": "hjello@gmail.com",
       "avatar": "test",
-      "id": 10
+      "id": "10"
     },
     {
       "name": "Max",
       "phone": "245-345-45645",
       "email": "andrii@gmail.com",
       "avatar": "test",
-      "id": 11
+      "id": "11"
     },
     {
       "name": "Roman",
       "phone": "2334-345-546",
       "email": "romantika@gmail.com",
       "avatar": "test",
-      "id": 12
+      "id": "12"
+    }
+  ],
+  "rooms": [],
+  "movies": [],
+  "games": [
+    {
+      "title": "test",
+      "price": 200,
+      "id": "19fe"
     }
   ]
 }
