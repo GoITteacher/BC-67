@@ -13,3 +13,17 @@
  * - stack
  * - Блок catch без об'єкта помилки
  */
+
+// function create(markup) {
+//   try {
+//     if (typeof markup !== 'string') {
+//       throw new Error('Markup is invalid!');
+//     }
+//     console.log(markup);
+//   } catch {
+//     console.log('Some error');
+//   }
+// }
+
+// create('<h1></h1>');
+// create();

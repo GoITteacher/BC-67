@@ -4,12 +4,21 @@ export class BookAPI {
 
   constructor() {}
 
-  getBooks() {
+  async getBooks() {
     const url = `${BookAPI.BASE_URL}${BookAPI.END_POINT}`;
-    return fetch(url).then(res => res.json());
+    const res = await fetch(url);
+    try {
+      if (res.ok) {
+        return res.json();
+      } else {
+        throw new Error(res.status);
+      }
+    } catch (err) {
+      console.log(err);
+    }
   }
 
-  createBook(newBook) {
+  async createBook(newBook) {
     const url = `${BookAPI.BASE_URL}${BookAPI.END_POINT}`;
 
     const options = {
@@ -20,7 +29,8 @@ export class BookAPI {
       body: JSON.stringify(newBook),
     };
 
-    return fetch(url, options).then(res => res.json());
+    const res = await fetch(url, options);
+    return res.json();
   }
 
   updateBook({ id, ...book }) {

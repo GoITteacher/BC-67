@@ -57,41 +57,6 @@
   ],
   "users": [
     {
-      "name": "Erma Pacocha",
-      "phone": "366-695-8386",
-      "email": "Renee_Grimes79@yahoo.com",
-      "avatar": "https://cdn.fakercloud.com/avatars/chaabane_wail_128.jpg",
-      "id": "1"
-    },
-    {
-      "name": "James Ondricka",
-      "phone": "300-357-6958",
-      "email": "Sadie83@yahoo.com",
-      "avatar": "https://cdn.fakercloud.com/avatars/eddiechen_128.jpg",
-      "id": "2"
-    },
-    {
-      "name": "Harold Mante",
-      "phone": "515-934-4190",
-      "email": "Luella.Heller29@yahoo.com",
-      "avatar": "https://cdn.fakercloud.com/avatars/namankreative_128.jpg",
-      "id": "3"
-    },
-    {
-      "name": "Mr. Angelina Lynch",
-      "phone": "457-238-5739",
-      "email": "Sarah_Collier43@yahoo.com",
-      "avatar": "https://cdn.fakercloud.com/avatars/lu4sh1i_128.jpg",
-      "id": "4"
-    },
-    {
-      "name": "Ms. Danielle Schaefer",
-      "phone": "676-406-4378",
-      "email": "Charity.Conn16@yahoo.com",
-      "avatar": "https://cdn.fakercloud.com/avatars/netonet_il_128.jpg",
-      "id": "5"
-    },
-    {
       "name": "Cheryl Kunze",
       "phone": "430-676-9640",
       "email": "Kennith_Rohan@hotmail.com",
@@ -139,6 +104,18 @@
       "email": "romantika@gmail.com",
       "avatar": "test",
       "id": "12"
+    },
+    {
+      "name": "Larisa",
+      "email": "lorik2000@gmail.com",
+      "phone": "+232345345",
+      "id": "8EMBCvI"
+    },
+    {
+      "name": "awdawd",
+      "email": "awdawdawd",
+      "phone": "sefsef",
+      "id": "HX-ZNU-"
     }
   ],
   "rooms": [],
