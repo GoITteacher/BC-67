@@ -1,7 +1,7 @@
 import { NewsAPI } from './modules/newsApi2';
 
 const newsApi = new NewsAPI();
-let maxPage = 1;
+
 const refs = {
   targetElem: document.querySelector('.js-target'),
   formElem: document.querySelector('.js-search-form'),
@@ -9,50 +9,54 @@ const refs = {
 };
 
 // =====================================
-refs.formElem.addEventListener('submit', onFormSubmit);
 
-function onFormSubmit(e) {
+const options = {
+  rootMargin: '500px',
+};
+
+const callback = function (entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      loadMore();
+    }
+  });
+};
+
+const observer = new IntersectionObserver(callback, options);
+
+// =====================================
+
+refs.formElem.addEventListener('submit', async e => {
   e.preventDefault();
   const query = e.target.elements.query.value;
   newsApi.query = query;
   newsApi.page = 1;
-  newsApi.getArticles().then(data => {
-    refs.articleListElem.innerHTML = '';
-    maxPage = data.total_pages;
-    renderArticles(data.articles);
-    observer.observe(refs.targetElem);
-    updateStatusObserver();
-  });
-}
+  refs.articleListElem.innerHTML = '';
 
-function loadMore() {
+  const result = await newsApi.getArticles();
+  renderArticles(result.articles);
+  newsApi.total_pages = result.total_pages;
+  changeObserverStatus();
+});
+
+async function loadMore() {
   newsApi.page += 1;
-  newsApi.getArticles().then(data => {
-    renderArticles(data.articles);
-    window.scrollBy({
-      top: 700,
-      behavior: 'smooth',
-    });
-    updateStatusObserver();
-  });
+  const result = await newsApi.getArticles();
+  renderArticles(result.articles);
+  changeObserverStatus();
 }
-// =====================================
-function callback(entries, observer) {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      console.log('Hello');
-      loadMore();
-    }
-  });
-}
-const observer = new IntersectionObserver(callback);
-// ======================================
 
-function updateStatusObserver() {
-  if (newsApi.page === maxPage) {
+function changeObserverStatus() {
+  if (newsApi.page >= newsApi.total_pages) {
     observer.unobserve(refs.targetElem);
+    console.log('remove observer');
+  } else {
+    observer.observe(refs.targetElem);
+    console.log('add observer');
   }
 }
+
+// =====================================
 
 function templateArticle({ author, title, summary, media, published_date }) {
   return `

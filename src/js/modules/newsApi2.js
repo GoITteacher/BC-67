@@ -11,6 +11,7 @@ export class NewsAPI {
   query = '';
   #pageSize = 10;
   page = 1;
+  total_pages = 1;
 
   getArticles() {
     const PARAMS = new URLSearchParams({
