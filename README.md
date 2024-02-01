@@ -1,53 +1,76 @@
-## [Частина 1 (теорія)](https://docs.google.com/presentation/d/1YK1DogtkPz0zTo313uAeuvvNh1vFfbStCD-g39jGd5M/edit?usp=sharing)
+# Project JS
 
-- Архітектура клієнт-сервер
-  - Протоколи передачі даних: HTTP та HTTPS
-  - REST API (backend)
-  - Публічні REST API
-- Допмат (відео):
-  - [The World Wide Web](https://youtu.be/guvsH5OFizE?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)
-  - [How The Internet Works](https://www.youtube.com/playlist?list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7)
-- Допмат:
-  - [Client-Server](https://habr.com/ua/post/495698/)
-  - [Вступ до REST API – RESTful веб-сервіси](https://habr.com/ua/post/483202/)
-  - [REST простою мовою](https://medium.com/@andr.ivas12/rest-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%8B%D0%BC-%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%BC-90a0bca0bc78)
-  - [OSI якщо вже зовсім нудно буде](https://ua.wikipedia.org/wiki/%D0%A1%D0%B5%D1%82%D0%B5%D0%B2%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C_OSI)
+## Repo
 
-## Частина 2 (практика)
+- Create repository by template
+  [VITE](https://github.com/goitacademy/vanilla-app-template)
+- Invite Collaborators (Settings->Collaborators->AddPeople)
+- Create branch dev
+- Change Settings
+  1. Go to settings
+  1. go to branches
+  1. Add Rule
+  1. For MAIN selected all items
+  1. For DEV selected first 2 items
+- Change Setting 2
+  1. Settings->Branches->
+  1. DefaultBranch -> SwitchToAnotherBranch
+  1. Потрібно натиснути на дві стрілочки і змінити main на dev
+- Change Setting 3
+  1. Settings->Actions->General
+  1. Scroll to the bottom of the page
+  1. У "Workflow permissions" потрібно поставити галочку "Read and Write
+     premission"
+  1. також потрібно поставити галочку біля "Allow GitHub Actions to create
+     ....."
 
-- HTTP-запити у браузері
-  - Fetch API
-  - Владка Network
-  - HTTP-методи
-  - Заголовки
-  - MIME-типи
-  - [Параметри запиту](https://pixabay.com/api/docs/)
-  - [Pixabay API](https://pixabay.com/api/docs/#api_search_images)
-- Документація REST API
-- Аутентифікація
-  - [https://newsapi.org/](https://newsapi.org/)
-    key-c8747511a2c34730a83caaff4f3693e7
-  - [https://weatherstack.com/](https://weatherstack.com/)
-  - [https://pixabay.com/api/docs/](https://pixabay.com/api/docs/)
-- Бібліотеки-обгортки
-- [Скасувати HTTP-запит з AbortController](https://davidwalsh.name/javascript-promise-tricks)
+## Project
 
-## Частина 3
+- Склонувати свій репозиторій
+- У папці partials створити під кожну секцію окремий HTML файл і підключити ці
+  файли у головний файл index.html (`<load ="partials/vite-promo.html" />`)
+- Підключити шрифти у головний файл index.hml
+- У папці style сторити папку layout. У папці layout сторити під кожну секцію
+  окремий css файл
+- у папці utils:
+  1. створити файл \_variables.css і оголосити там необхідні змінні
+  1. сторити файли placeholders.css якщо він потрібний
+- у папці base:
+  1. У файлі \_common.css створити мінімальний сброс
+  1. У файлі \_container.css оголосити контейнер під усі екрани
+     (мобілка,таблетка, десктоп)
+- Підключити усі css файли до файлу main.css через дерективу import
 
-- Cross-Origin Resource Sharing (CORS)
-  - [Стаття на HABR](https://habr.com/ua/company/macloud/blog/553826/)
-  - [Стаття на MDN](https://developer.mozilla.org/uk/docs/Web/HTTP/CORS)
-  - [https://pokeapi.co/](https://pokeapi.co/)
-  - [https://darksky.net/dev](https://darksky.net/dev)
-- Proxy
-  - Зберігання API ключів та секретів
-  - [https://lpj-weather-service.herokuapp.com/](https://lpj-weather-service.herokuapp.com/)
+## [For ScrumMaster Trello](https://docs.google.com/document/d/1PvwscZhKhXM_ow0_RMJEWJ2xgtsEb65lLeGG3mEzFMs/edit)
+
+- Потрібно додати колонки:
+
+  - Materials
+  - To do
+  - In progress
+  - Code review
+  - Done
+
+- Для розробників
+
+  1. У колонці Materials необхідно розмістити картки з дод. інформацією для
+     роботи над проєктом: макет, ТЗ, інструкція до проєкту даного рівня (також
+     сюди можна винести різні корисні посилання на навчальні відео тощо)
+  1. У колонці To do потрібно створити картки з описом задач
+  1. У колонці In progress розробник перетягує картку із завданнями, яку
+     збирається реалізовувати. ВАЖЛИВО! У розробника в колонці In progress може
+     бути відкрита лише одна картка, із завданням, яке він виконує. Друга картка
+     може з'явитися в цій колонці у тому випадку, коли тімлід повернув
+     розробнику правки з попереднього завдання, у момент, коли той уже займався
+     реалізацією наступного завдання.
+  1. У колонці Code review знаходяться картки із завданнями, які розробник
+     відправив тімліду на перевірку в пул-реквесті. ВАЖЛИВО! Тільки тімлід може
+     перемістити картку в In progress із зауваженнями для доопрацювання, якщо є
+     що допрацювати або Done, якщо завдання виконане без зауважень.
 
 ---
 
-## Доп Мат
+## Посилання
 
-- [DNS](https://selectel.ru/blog/dns-server/)
-- [Презентація](https://drive.google.com/file/d/1KcDIQuyn2IBwESAjg96hH-nniozG3L3W/view?usp=sharing)
-- [Версії HTTP](https://developer.mozilla.org/ru/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP)
-- [SPECS](https://rapidapi.com/pgamerxdev/api/random-stuff-api/specs)
+- [FIGMA](https://www.figma.com/file/HDemmgbrZMucoGP17618n9/EnergyFlow?type=design&node-id=0-1&mode=design&t=k9Y2NSKUTBsxpi6E-0)
+- [TЗ](https://docs.google.com/spreadsheets/d/1yOPpj7MV4d-zXV9cSwXUgFKNKwWAt3vp0tyfmlygCdA/edit?usp=sharing)
