@@ -74,3 +74,13 @@
 
 - [FIGMA](https://www.figma.com/file/HDemmgbrZMucoGP17618n9/EnergyFlow?type=design&node-id=0-1&mode=design&t=k9Y2NSKUTBsxpi6E-0)
 - [TЗ](https://docs.google.com/spreadsheets/d/1yOPpj7MV4d-zXV9cSwXUgFKNKwWAt3vp0tyfmlygCdA/edit?usp=sharing)
+
+# JS Bootcamp
+
+## Посилання на корисні сайти
+
+- [LeetСode](https://leetcode.com)
+- [CodeWars](https://www.codewars.com/dashboard)
+- [CodeChef](https://www.codechef.com/learn)
+- [Зручний фільтр задач](https://acmp.ru/index.asp?main=tasks)
+- [Підготовка до співбесіди](https://www.interviewbit.com/practice/)
